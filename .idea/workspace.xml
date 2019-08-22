@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e8aa561-abf1-4d99-960b-b5bd05a64bbe" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/libraries/.gradle/" />
+    <ignored path="$PROJECT_DIR$/libraries/tess-two/.gradle/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/generated/not_namespaced_r_class_sources/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/generated/source/r/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/aapt_friendly_merged_manifests/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/annotation_processor_list/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/annotations_typedef_file/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/annotations_zip/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/check_manifest_result/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/compile_only_not_namespaced_r_class_jar/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/consumer_proguard_file/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/javac/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/library_and_local_jars_jni/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/library_manifest/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/lint_jar/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/merged_jni_libs/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/merged_manifests/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/packaged-classes/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/tess-two/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/generated/not_namespaced_r_class_sources/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/generated/source/r/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/aapt_friendly_merged_manifests/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/aidl_parcelable/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/annotation_processor_list/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/check_manifest_result/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/compile_library_classes/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/compile_only_not_namespaced_r_class_jar/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/full_jar/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/javac/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/library_assets/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/library_java_res/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/library_manifest/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/lint_jar/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/merged_jni_libs/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/merged_manifests/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/merged_shaders/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/packaged_res/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/public_res/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/runtime_library_classes/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/shader_assets/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/openCVLibrary345/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/" />
+    <ignored path="$PROJECT_DIR$/app/build/generated/source/r/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/annotation_processor_list/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/apk_list/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/build-info/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/builds/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/check_manifest_result/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/cmake/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/duplicate_classes_check/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant-run-apk/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_app_info_output_file/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_main_apk_resources/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_split_apk_resources/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/javac/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/lint_jar/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/manifest-checker/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/merged_assets/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/merged_jni_libs/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/merged_manifests/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/merged_shaders/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/prebuild/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/processed_res/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/reload-dex/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/resources/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/shader_assets/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/signing_config/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/split-apk/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/validate_signing_config/" />
+    <ignored path="$PROJECT_DIR$/app/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/app/build/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ReadingAssistance_TB-master" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/ImageToText.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="42" column="35" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
+                <element signature="e#1538#1539#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/SpinnerItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/TextureView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="100" column="12" selection-start-line="90" selection-start-column="8" selection-end-line="100" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/ResultActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_result.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/overideTalkBack/PresenterOverideTalkBack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/overideTalkBack/PresenterOverrideTalkBackInteface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/CaptureImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="234" column="34" lean-forward="true" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/cpp/C_preprocess.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/cpp/page_dewarp.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>try</find>
+      <find>re</find>
+      <find>catch</find>
+      <find>texttospeech.shutdown()</find>
+      <find>flash</find>
+      <find>auto</find>
+      <find>load</find>
+      <find>bitmap</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/ResultActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/RESULT_LOAD_IMAGE.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/CaptureImage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/ImageToText.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="builddewarp" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="aidl" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="aidl" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="engine" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary345" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ReadingAssistance_TB-master.tess-two" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ReadingAssistance_TB-master.tess-two" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ReadingAssistance_TB-master.tess-two" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="googlecode" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingAssistance_TB-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingAssistance_TB-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="builddewarp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="device.picker.selection" value="Nexus_5X_API_26_2" />
+    <property name="last_opened_file_path" value="D:/ECG 1signal IIR" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.builddewarp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e8aa561-abf1-4d99-960b-b5bd05a64bbe" name="Default Changelist" comment="" />
+      <created>1565233062528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565233062528</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7208122" visible="true" weight="0.29500756" />
+      <window_info id="Structure" order="2" sideWeight="0.27918783" side_tool="true" visible="true" weight="0.29500756" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.056360707" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.6988728" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32850242" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32850242" />
+      <window_info anchor="bottom" id="Build" order="8" visible="true" weight="0.048309177" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Assistant" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/hardware/camera2/CameraCaptureSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="352" column="24" selection-start-line="352" selection-start-column="24" selection-end-line="352" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/UsageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/speech/tts/TextToSpeech.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13583">
+          <caret line="851" column="23" selection-start-line="851" selection-start-column="23" selection-end-line="851" selection-end-column="23" />
+          <folding>
+            <element signature="e#28933#28934#0" expanded="true" />
+            <element signature="e#28978#28979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_capture_image.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/RESULT_LOAD_IMAGE.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/SpinnerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/hardware/camera2/CameraDevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="105" column="27" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/TextureView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="100" column="12" selection-start-line="90" selection-start-column="8" selection-end-line="100" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/ResultActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_result.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/overideTalkBack/PresenterOverideTalkBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/overideTalkBack/PresenterOverrideTalkBackInteface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/C_preprocess.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/page_dewarp.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/SpinnerItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/ImageToText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/builddewarp/CaptureImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="234" column="34" lean-forward="true" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
