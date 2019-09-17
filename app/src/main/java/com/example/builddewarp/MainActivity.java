@@ -33,16 +33,15 @@ public class MainActivity extends AppCompatActivity {
     String utteranceId = UUID.randomUUID().toString();
     Button btnCamera;
     Button btnLoadPicture;
-    private ArrayList<SpinnerItem> mLanguage;
-    private ArrayList<SpinnerItem> mTime;
+    private ArrayList<SpinnerItem> mLanguage,mTime,mType;
     private SpinnerAdapter mAdapter;
-    Spinner spnLanguage;
-    Spinner spnTime;
+    Spinner spnLanguage,spnType,spnTime;
     TextView usage;
     Uri imageUri;
     private static int time = 0;
-    private static String language = null;
-    private static String langItem, timeItem;
+    private static int type = 0;
+    private static String language = "vie";
+    private static String langItem, timeItem, typeItem;
 
     private PresenterOverideTalkBack presenterOverrideTalkBack = new PresenterOverideTalkBack(this);
 
@@ -67,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         mh.setBackgroundResource(R.drawable.anh1);
         spnLanguage = findViewById(R.id.spn_language);
         spnTime = findViewById(R.id.spn_time);
+        spnType = findViewById (R.id.spn_type);
         usage = findViewById(R.id.tv_usage);
         checkPermissions();
         initList();
@@ -75,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
         spnLanguage.setAdapter(mAdapter);
         mAdapter = new SpinnerAdapter(this, mTime);
         spnTime.setAdapter(mAdapter);
-
+        mAdapter = new SpinnerAdapter (this, mType);
+        spnType.setAdapter (mAdapter);
+        OnTypeClick ();
         OnLanguageClick();
         OnTimeClick();
         usage.setOnClickListener(new View.OnClickListener() {
@@ -86,14 +88,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // getting picture from gallery
-        btnLoadPicture = findViewById (R.id.btn_loadpicture);
-        btnLoadPicture.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick (View v) {
-                getImageFromAlbum();
-
-            }
-        });
+//        btnLoadPicture = findViewById (R.id.btn_loadpicture);
+//        btnLoadPicture.setOnClickListener (new View.OnClickListener () {
+//            @Override
+//            public void onClick (View v) {
+//                getImageFromAlbum();
+//
+//            }
+//        });
         btnCamera = findViewById(R.id.btn_camera);
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,11 +107,11 @@ public class MainActivity extends AppCompatActivity {
     }
     // get image from album
 
-    private void getImageFromAlbum ( ) {
-       Intent gallery = new Intent (Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-       startActivityForResult (gallery, PICK_IMAGE);
-
-    }
+//    private void getImageFromAlbum ( ) {
+//        Intent gallery = new Intent (Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+//        startActivityForResult (gallery, PICK_IMAGE);
+//
+//    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult (requestCode, resultCode,data);
@@ -150,12 +152,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 SpinnerItem lanItem = (SpinnerItem) parent.getItemAtPosition(position);
-                langItem = lanItem.getmLanguage();
+                langItem = lanItem.getmItem();
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
                 Toast.makeText(MainActivity.this, "Vui lòng chọn lại", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    public void OnTypeClick ( ) {
+        spnType.setOnItemSelectedListener (new AdapterView.OnItemSelectedListener () {
+            @Override
+            public void onItemSelected (AdapterView <?> parent, View view, int position, long id) {
+                SpinnerItem typItem = (SpinnerItem) parent.getItemAtPosition (position);
+                typeItem = typItem.getmItem ();
+            }
+
+            @Override
+            public void onNothingSelected (AdapterView <?> parent) {
+                Toast.makeText (MainActivity.this, "Vui lòng chọn lại", Toast.LENGTH_SHORT).show ();
             }
         });
     }
@@ -165,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 SpinnerItem timItem = (SpinnerItem) parent.getItemAtPosition(position);
-                timeItem = timItem.getmLanguage();
+                timeItem = timItem.getmItem();
             }
 
             @Override
@@ -183,10 +199,25 @@ public class MainActivity extends AppCompatActivity {
             case "Tiếng Việt":
                 language = "vie";
                 break;
-                default:
-                    break;
+            default:
+                language = "vie";
+                break;
         }
         return language;
+    }
+    public static int getType ( ) {
+        switch (typeItem) {
+            case "Dewarp":
+                type = 1;
+                break;
+            case "Gray":
+                type = 2;
+                break;
+            default:
+                type = 1;
+                break;
+        }
+        return type;
     }
 
     public static int getTimer(){
@@ -209,11 +240,14 @@ public class MainActivity extends AppCompatActivity {
     private void initList(){
         mTime = new ArrayList<>();
         mLanguage = new ArrayList<>();
+        mType = new ArrayList<>();
         mLanguage.add(new SpinnerItem("Tiếng Việt"));
         mLanguage.add(new SpinnerItem("English"));
         mTime.add(new SpinnerItem("5 giây"));
         mTime.add(new SpinnerItem("4 giây"));
         mTime.add(new SpinnerItem("3 giây"));
         mTime.add(new SpinnerItem("2 giây"));
+        mType.add (new SpinnerItem ("Dewarp"));
+        mType.add (new SpinnerItem ("Gray"));
     }
 }

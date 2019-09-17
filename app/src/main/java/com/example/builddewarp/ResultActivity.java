@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -13,14 +14,9 @@ import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.example.quyenpham.R;
 
 import java.io.File;
@@ -49,7 +45,7 @@ public class ResultActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
 
         assert bundle != null;
-         String fileImage = bundle.getString("Image");
+        String fileImage = bundle.getString("Image");
         //Log.d("Quyen", fileImage);
         //assert content != null;
         //final CharSequence charSequence = new StringBuffer(content);
@@ -142,4 +138,3 @@ public class ResultActivity extends AppCompatActivity {
         }
     }
 }
-

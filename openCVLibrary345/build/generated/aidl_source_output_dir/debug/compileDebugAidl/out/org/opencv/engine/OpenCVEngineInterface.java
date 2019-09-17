@@ -1,6 +1,5 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\ReadingAssistance_TB_1.0\\ReadingAssistance_TB-master\\openCVLibrary345\\src\\main\\aidl\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**

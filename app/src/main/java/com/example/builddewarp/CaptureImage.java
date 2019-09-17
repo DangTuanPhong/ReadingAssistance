@@ -6,8 +6,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
+import android.graphics.Paint;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
@@ -27,6 +31,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.StrictMode;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -83,6 +88,7 @@ public class CaptureImage extends AppCompatActivity {
     CharSequence ha_xuong = "hạ xuống";
     CharSequence wait = "Đang lấy nội dung trang sách";
     private int test;
+    int photoType = MainActivity.getType();
     String utteranceId = UUID.randomUUID().toString();
     RelativeLayout take;
     final Locale loc = new Locale("vi");
@@ -214,6 +220,23 @@ public class CaptureImage extends AppCompatActivity {
         return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(), matrix, true);
     }
     //////
+
+    public Bitmap toGrayscale(Bitmap bmpOriginal)
+    {
+        int width, height;
+        height = bmpOriginal.getHeight();
+        width = bmpOriginal.getWidth();
+
+        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas c = new Canvas(bmpGrayscale);
+        Paint paint = new Paint();
+        ColorMatrix cm = new ColorMatrix();
+        cm.setSaturation(0);
+        ColorMatrixColorFilter f = new ColorMatrixColorFilter(cm);
+        paint.setColorFilter(f);
+        c.drawBitmap(bmpOriginal, 0, 0, paint);
+        return bmpGrayscale;
+    }
     public class ImageSave implements Runnable {
         private Image image;
         private ImageReader imageReader;
@@ -250,12 +273,15 @@ public class CaptureImage extends AppCompatActivity {
                         switch (test){
                             case 11:
                                 toSpeech.speak(chup_anh, TextToSpeech.QUEUE_FLUSH,null, utteranceId);
+                                Log.d(TAG, "chup anh");
                                 break;
                             case 1:
                                 toSpeech.speak(nghieng_len, TextToSpeech.QUEUE_FLUSH,null, utteranceId);
+                                Log.d(TAG, "nghieng len ");
                                 break;
                             case 2:
                                 toSpeech.speak(nghieng_xuong, TextToSpeech.QUEUE_FLUSH,null, utteranceId);
+                                Log.d(TAG, "nghieng xuong ");
                                 break;
                             case 3:
                                 toSpeech.speak(nghieng_trai, TextToSpeech.QUEUE_FLUSH,null, utteranceId);
@@ -277,12 +303,13 @@ public class CaptureImage extends AppCompatActivity {
                                 break;
                             case 9:
                                 toSpeech.speak(nang_len, TextToSpeech.QUEUE_FLUSH,null, utteranceId);
+                                Log.d(TAG, "nang len ");
                                 break;
                             case 10:
                                 toSpeech.speak(ha_xuong, TextToSpeech.QUEUE_FLUSH,null, utteranceId);
                                 break;
-                                default:
-                                    break;
+                            default:
+                                break;
                         }
                     }
                 }
@@ -297,7 +324,15 @@ public class CaptureImage extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                process(mymat);
+                switch (photoType){
+                    case 1:
+                        process(mymat);
+                        break;
+                    case 2:
+                        toGrayscale(mbitmap);
+                        SaveImageDewarp(mbitmap);
+                        break;
+                }
                 //String result = imageToText.doInBackground(bit);
                 Intent intent = new Intent(CaptureImage.this, ResultActivity.class);
                 Bundle bundle = new Bundle();
@@ -368,38 +403,37 @@ public class CaptureImage extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        closeCamera();
-        closeBackgroundThread();
         super.onPause();
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        toSpeech.shutdown();
+    protected void onPostResume() {
+        super.onPostResume();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
-
+        closeCamera();
+        closeBackgroundThread();
     }
 
     private boolean mFlashSupported;
 
-    private void setAutoFlash(CaptureRequest.Builder requestBuilder) {
-        if (mFlashSupported) {
-            requestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
-            requestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AF_MODE_AUTO);
-            requestBuilder.set(CaptureRequest.FLASH_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
-            try {
-                cameraCaptureSession.setRepeatingRequest(requestBuilder.build(), null, null);
-            } catch (CameraAccessException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+//    private void setAutoFlash(CaptureRequest.Builder requestBuilder) {
+//        if (mFlashSupported) {
+//            requestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
+//            requestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AF_MODE_AUTO);
+//            requestBuilder.set(CaptureRequest.FLASH_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
+//            try {
+//                cameraCaptureSession.setRepeatingRequest(requestBuilder.build(), null, null);
+//            } catch (CameraAccessException e) {
+//                e.printStackTrace();
+//            } catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        }
+//    }
 
     private void setupCamera(int width, int height) {
         CameraManager cameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
@@ -582,19 +616,20 @@ public class CaptureImage extends AppCompatActivity {
         state = STATE_WAIT_LOCK;
         previewCaptureRequestBuilder.set(CaptureRequest.CONTROL_AF_TRIGGER,
                 CaptureRequest.CONTROL_AF_TRIGGER_START);
-        setAutoFlash(previewCaptureRequestBuilder);
+        //setAutoFlash(previewCaptureRequestBuilder);
         captureStillImage();
     }
 
-    private void unlockFocus() {
+    private void unlockFocus(){
         try {
             state = STATE_PREVIEW;
             previewCaptureRequestBuilder.set(CaptureRequest.CONTROL_AF_TRIGGER,
                     CaptureRequest.CONTROL_AF_TRIGGER_CANCEL);
-            setAutoFlash(previewCaptureRequestBuilder);
+            //setAutoFlash(previewCaptureRequestBuilder);
             cameraCaptureSession.capture(previewCaptureRequestBuilder.build(),
                     cameraSessionCaptureCallback,
                     backgroundHandler);
+
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
@@ -607,7 +642,7 @@ public class CaptureImage extends AppCompatActivity {
 
             int rotation = getWindowManager().getDefaultDisplay().getRotation();
             captureStill.set(CaptureRequest.JPEG_ORIENTATION, ORIENTATIONS.get(rotation));
-            setAutoFlash(captureStill);
+           // setAutoFlash(captureStill);
             CameraCaptureSession.CaptureCallback captureCallback = new
                     CameraCaptureSession.CaptureCallback() {
                         @Override
@@ -621,6 +656,8 @@ public class CaptureImage extends AppCompatActivity {
             e.printStackTrace();
         }catch (Exception ex){
             ex.printStackTrace();
+            Log.d(TAG, "exception: " + ex);
+            //Toast.makeText(this, "Vui lòng chụp lại ảnh", Toast.LENGTH_LONG).show();
         }
     }
 
